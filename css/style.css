@@ -1,0 +1,363 @@
+/* .slider h3,
+.slider h5,
+.clients h3{
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.parallax-container{
+    height: 320px;
+}
+
+.parallax img{
+    opacity: 0.8 !important;
+} */
+
+/* Navbar */
+
+.navbar-brand{
+    font-family: 'Raleway', sans-serif;
+}
+
+.nav-link{
+    margin-right: 30px;
+}
+
+/* utilty */
+.tombol{
+    border-radius: 40px;
+}
+
+
+
+
+
+
+.square{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+.square span:nth-child(1){
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 2px solid #000;
+	border-radius: 48% 62% 63% 37% / 41% 44% 56% 59%;
+	transition: 0.5s;
+	animation: animate 6s linear infinite;
+}
+
+.square span:nth-child(2){
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 2px solid #0000;
+	border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+	transition: 0.5s;
+	animation: animate 4s linear infinite;
+}
+
+.square span:nth-child(3){
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 2px solid #2c3e50;
+	border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+	transition: 0.5s;
+	animation: animate2 10s linear infinite;
+}
+
+@keyframes animate{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+@keyframes animate2{
+	0%{
+		transform: rotate(360deg);
+	}
+	100%{
+		transform: rotate(0deg);
+	}
+}
+
+
+ul li{
+	position: absolute;
+	border: 1px solid #000;
+	width: 30px;
+	height: 30px;
+	list-style: none;
+	opacity: 0;
+	background:#000;
+}
+
+.kotak li{
+	top: 50vh;
+	left: 45vw;
+	animation: square 10s linear infinite;
+}
+.kotak li:nth-child(2){
+	top: 80vh;
+	left: 10vw;
+	animation-delay: 2s;
+}
+.kotak li:nth-child(3){
+	top: 80vh;
+	left: 85vw;
+	animation-delay: 4s;
+}
+.kotak li:nth-child(4){
+	top: 10vh;
+	left: 70vw;
+	animation-delay: 6s;
+}
+.kotak li:nth-child(5){
+	top: 10vh;
+	left: 10vw;
+	animation-delay: 8s;
+}
+@keyframes kotak{
+	0%{
+		transform: scale(0) rotateX(0deg);
+		opacity: 1;
+	}
+	100%{
+		transform: scale(5) rotateX(1000deg);
+		opacity: 0;
+	}
+}
+
+.circle li{
+	bottom: 0;
+	left: 15vw;
+	animation: circle 10s linear infinite;
+}
+.circle li:nth-child(2){
+	left: 35vw;
+	animation-delay: 2s;
+}
+.circle li:nth-child(3){
+	left: 55vw;
+	animation-delay: 6s;
+}
+.circle li:nth-child(4){
+	left: 75vw;
+	animation-delay: 4s;
+}
+.circle li:nth-child(5){
+	left: 90vw;
+	animation-delay: 8s;
+}
+@keyframes circle{
+	0%{
+		transform: scale(0)rotate(0deg);
+		opacity: 1;
+		bottom: 0;
+		border-radius: 0;
+	}
+	100%{
+		transform: scale(5)rotate(1000deg);
+		opacity: 0;
+		bottom: 90vh;
+		border-radius: 50%;
+	}
+}
+
+
+/* Hero */
+
+.hero{
+    padding-bottom: 3%;
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+	font-family: sans-serif;
+}
+
+/* .parallax{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.column{
+    margin-top: 70px;
+}
+
+.column h1{
+    font-family: 'Do Hyeon', sans-serif;
+    text-align: center;
+}
+
+.column p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+
+/* About */
+.about-page{
+    background-color: #f1f2f6;
+    background-size: cover;
+    padding-top: 0.3%;
+    padding-bottom: 1%;
+}
+
+#about-page .display-4{
+    font-size: 40px;
+}
+
+.paragraph{
+    font-family: 'Muli', sans-serif;
+}
+
+.about{
+    margin-top: 100px;
+    margin-right: 30px;
+}
+
+.about img{
+    position: relative;
+    left: 60px;
+}
+
+h1 .introduce{
+    margin-right: -30px;
+}
+
+
+/* Pendidikan */
+
+.pendidikan-page{
+    text-align: center;
+}
+
+.ubsi h3{
+    font-size: 28px;
+}
+
+
+.tmkm h2{
+    font-size: 28px;
+}
+
+
+
+
+/* Passion */
+
+.passion-page{
+    background-color: #f1f2f6;
+}
+
+.passion{
+    margin-top: 100px;
+    margin-right: 30px;
+}
+
+.cc{
+    font-size: 30px;
+}
+
+
+.detail-pass{
+    margin: 5%;
+}
+
+/* Skill */
+
+.skill li{
+    list-style-type: none;
+}
+
+.skill-img{
+    width: 10%;
+}
+
+
+/* .skill-bg{
+    background-image: url(../assets/img/deve.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0, -100px;
+    height: 400px;
+    position: relative;
+}
+
+.skill-bg::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: linear-gradient(to top, rgba(0,0,0,1),rgba(0,0,0,0));
+    opacity: 90px;
+    bottom: 0;
+} */
+
+/* .skill-page{
+    color: white;
+} */
+
+/* Sosmed */
+
+.sosmed img{
+    width: 11%;
+    height: 11%;
+    left: -2px;
+}
+
+
+/* Dekstop ver */
+@media (min-width: 992px) {
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid #2c3e50;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .square{
+        width: 500px;
+	    height: 500px;
+    }
+
+    .sosmed img{
+        width: 10%;
+        height: 10%;
+    }
+
+
+    #about-page .display-4{
+        font-size: 50px;
+    }
+
+    .pendidikan-page{
+        text-align: left;
+    }
+
+    .ubsi h3{
+        font-size: 33px;
+    }      
+
+    .tmkm h2{
+        font-size: 40px;
+    }
+ }
